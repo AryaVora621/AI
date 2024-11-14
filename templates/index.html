@@ -1,0 +1,22 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to PDF Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the PDF Summarizer</h1>
+        <nav>
+            <a href="{{ url_for('upload_pdf') }}">Upload PDF</a> | 
+            <a href="{{ url_for('results') }}">View Results</a>
+        </nav>
+    </header>
+    <main>
+        <p>Upload a PDF to get summarized results!</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- templates/results.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarized Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>PDF Summarization Results</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Home</a> |
+            <a href="{{ url_for('upload_pdf') }}">Upload Another PDF</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Summary</h2>
+        <p>{{ summary }}</p>
+    </main>
+</body>
+</html>
